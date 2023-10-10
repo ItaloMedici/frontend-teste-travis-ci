@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - 16
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+
+install:
+  - npm ci
+
+script:
+  - npm test
+  - npm run build
